@@ -64,8 +64,8 @@ def input_race(input):
 def input_weapon(input):
     global state_weapon
     state_weapon = input
-    if state_weapon == 'Мечь':
-        hero.weapon = 'Мечь'
+    if state_weapon == 'Меч':
+        hero.weapon = 'Меч'
         hero.dmg += 5
         print(state_weapon)
     if state_weapon == 'Посох':
@@ -120,7 +120,7 @@ btn_human = Button(root, text = 'Человек', bg = 'gray75', fg = 'black', f
 btn_elf = Button(root, text = 'Эльф', bg = 'gray75', fg = 'black', font = ('Consolas', 20), command = lambda: input_race('Эльф'))
 btn_dwarf = Button(root, text = 'Гном', bg = 'gray75', fg = 'black', font = ('Consolas', 20), command = lambda: input_race('Гном'))
 
-btn_sword = Button(root, text = 'Мечь', bg = 'gray75', fg = 'black', font = ('Consolas', 20), command = lambda: input_weapon('Мечь'))
+btn_sword = Button(root, text = 'Меч', bg = 'gray75', fg = 'black', font = ('Consolas', 20), command = lambda: input_weapon('Меч'))
 btn_stuff = Button(root, text = 'Посох', bg = 'gray75', fg = 'black', font = ('Consolas', 20), command = lambda: input_weapon('Посох'))
 btn_bow = Button(root, text = 'Лук', bg = 'gray75', fg = 'black', font = ('Consolas', 20), command = lambda: input_weapon('Лук'))
 
