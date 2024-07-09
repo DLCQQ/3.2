@@ -28,18 +28,18 @@ def input_prof(input):
     state_prof = input
     if state_prof == 'Воин':
         hero.prof = 'Воин'
-        hero.hp *= 1.5
-        hero.dmg *= 1.3
+        hero.hp += 20
+        hero.dmg += 30
         print(state_prof)
     if state_prof == 'Волшебник':
         hero.prof = 'Волшебник'
-        hero.hp *= 1.2
-        hero.dmg *= 1.7
+        hero.hp += 10
+        hero.dmg += 25
         print(state_prof)
     if state_prof == 'Лучник':
         hero.prof = 'Лучник'
-        hero.hp *= 1.5
-        hero.dmg *= 1.2
+        hero.hp += 5
+        hero.dmg += 15
         print(state_prof)
 
 def input_race(input):
@@ -47,18 +47,18 @@ def input_race(input):
     state_race = input
     if state_race == 'Человек':
         hero.race = 'Человек'
-        hero.hp *= 1.2
-        hero.dmg *= 1.6
+        hero.hp += 10
+        hero.dmg += 15
         print(state_race)
     if state_race == 'Эльф':
         hero.race = 'Эльф'
-        hero.hp *= 1.8
-        hero.dmg *= 1.6
+        hero.hp += 20
+        hero.dmg += 5
         print(state_race)
     if state_race == 'Гном':
         hero.race = 'Гном'
-        hero.hp *= 1.7
-        hero.dmg *= 1.5
+        hero.hp += 50
+        hero.dmg += 10
         print(state_race)
 
 def input_weapon(input):
@@ -66,15 +66,15 @@ def input_weapon(input):
     state_weapon = input
     if state_weapon == 'Мечь':
         hero.weapon = 'Мечь'
-        hero.dmg *= 1.2
+        hero.dmg += 5
         print(state_weapon)
     if state_weapon == 'Посох':
         hero.weapon = 'Посох'
-        hero.dmg *= 1.1
+        hero.dmg += 2
         print(state_weapon)
     if state_weapon == 'Лук':
         hero.weapon = 'Лук'
-        hero.dmg *= 1.2
+        hero.dmg += 7
         print(state_weapon)
 
 def dont():
