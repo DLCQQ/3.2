@@ -1,6 +1,6 @@
 from tkinter import *
 import time
-
+from playsound import playsound
 state_prof = ''
 state_race = ''
 state_weapon = ''
@@ -82,6 +82,8 @@ def dont():
     bg_label.configure(image=new_photo)
     bg_label.image = new_photo
     label_hero.configure(text = 'Powerd by DLCQQ')
+    playsound('ban.mp3', block = False)
+
     
     
 
